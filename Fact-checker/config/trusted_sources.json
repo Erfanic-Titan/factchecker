@@ -1,0 +1,119 @@
+{
+    "news": [
+        {
+            "name": "خبرگزاری ایرنا",
+            "domain": "irna.ir",
+            "base_credibility": 0.8,
+            "api_url": "https://api.irna.ir/v1",
+            "api_key": "your_api_key_here",
+            "rate_limit": 60,
+            "languages": ["fa"],
+            "categories": ["news", "politics", "economy", "social", "culture"]
+        },
+        {
+            "name": "خبرگزاری ایسنا",
+            "domain": "isna.ir",
+            "base_credibility": 0.8,
+            "api_url": "https://api.isna.ir/v1",
+            "api_key": "your_api_key_here",
+            "rate_limit": 60,
+            "languages": ["fa"],
+            "categories": ["news", "politics", "economy", "social", "science"]
+        }
+    ],
+    "academic": [
+        {
+            "name": "پژوهشگاه علوم و فناوری اطلاعات ایران",
+            "domain": "irandoc.ac.ir",
+            "base_credibility": 0.9,
+            "api_url": "https://api.irandoc.ac.ir",
+            "api_key": "your_api_key_here",
+            "rate_limit": 30,
+            "languages": ["fa", "en"],
+            "types": ["thesis", "article", "research"]
+        },
+        {
+            "name": "پایگاه استنادی علوم جهان اسلام",
+            "domain": "isc.gov.ir",
+            "base_credibility": 0.9,
+            "api_url": "https://api.isc.gov.ir",
+            "api_key": "your_api_key_here",
+            "rate_limit": 30,
+            "languages": ["fa", "ar", "en"],
+            "types": ["journal", "conference", "book"]
+        }
+    ],
+    "government": [
+        {
+            "name": "مرکز آمار ایران",
+            "domain": "amar.org.ir",
+            "base_credibility": 0.95,
+            "api_url": "https://api.amar.org.ir",
+            "api_key": "your_api_key_here",
+            "rate_limit": 40,
+            "languages": ["fa"],
+            "data_types": ["statistics", "reports", "census"]
+        },
+        {
+            "name": "سازمان ثبت احوال کشور",
+            "domain": "sabteahval.ir",
+            "base_credibility": 0.95,
+            "api_url": "https://api.sabteahval.ir",
+            "api_key": "your_api_key_here",
+            "rate_limit": 30,
+            "languages": ["fa"],
+            "data_types": ["population", "vital_statistics"]
+        }
+    ],
+    "fact_check": [
+        {
+            "name": "شبکه راستی‌آزمایی ایران",
+            "domain": "factnameh.com",
+            "base_credibility": 0.85,
+            "api_url": "https://api.factnameh.com",
+            "api_key": "your_api_key_here",
+            "rate_limit": 50,
+            "languages": ["fa"],
+            "categories": ["politics", "social", "health", "science"]
+        }
+    ],
+    "international": [
+        {
+            "name": "Reuters",
+            "domain": "reuters.com",
+            "base_credibility": 0.85,
+            "api_url": "https://api.reuters.com",
+            "api_key": "your_api_key_here",
+            "rate_limit": 60,
+            "languages": ["en"],
+            "categories": ["news", "business", "world"]
+        },
+        {
+            "name": "Associated Press",
+            "domain": "ap.org",
+            "base_credibility": 0.85,
+            "api_url": "https://api.ap.org",
+            "api_key": "your_api_key_here",
+            "rate_limit": 60,
+            "languages": ["en"],
+            "categories": ["news", "politics", "world"]
+        }
+    ],
+    "blacklist": {
+        "domains": [
+            "fake-news.com",
+            "conspiracy-theories.net"
+        ],
+        "patterns": [
+            ".*\\.wordpress\\.com$",
+            ".*\\.blogspot\\.com$"
+        ],
+        "update_frequency": "daily"
+    },
+    "metadata": {
+        "last_updated": "2024-01-01",
+        "version": "1.0.0",
+        "update_frequency": "weekly",
+        "maintainer": "fact_checker_team@domain.com"
+    }
+}
